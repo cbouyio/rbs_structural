@@ -12,7 +12,9 @@ Reviews on RBPs and the computation methods developed for their identification a
 
 ### Tools - software:
 
-1. https://realpython.com/python-for-data-analysis/
+1. https://www.w3schools.com/python/pandas/default.asp
+2. https://realpython.com/python-for-data-analysis/
+3. 
 
 
 ### Data:
@@ -24,3 +26,4 @@ Reviews on RBPs and the computation methods developed for their identification a
 
 
 ## Remarks
+1. Costas - Find the document and data and results from the previous M2 stage (Sepher).
