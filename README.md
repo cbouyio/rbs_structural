@@ -1,2 +1,2 @@
-# rbs_stuctural
+# rbs_structural
 RBS structural motif finding
