@@ -32,3 +32,12 @@ Reviews on RBPs and the computation methods developed for their identification a
 
 ## Remarks
 1. Costas - Find the document and data and results from the previous M2 stage (Sepher).
+
+
+## After meeting on 30/10/2024
+
+Techincal part
+1. Add an additional column "No_feat" to show the total number of features for each RBP.
+2. Create a motif_info list and put only the features that have a"motif" or a "binding" type.
+3. Generate three new columns in the output file one "Binding_site" one "Motifs" and one "Domains" and you put all the BS IDs and all the Motif IDs and Domain IDs semicolon separed.
+4. At the end out data file will have the following columns "rbp_name","uniprotID","No_Features","motifs"(motif IDs semicolon separated),"binding_Sites"(BS IDs semicolon separated)
