@@ -1,0 +1,5 @@
+DRAFT contenu : 
+
+- DDX51_human.json : fichier exemple RBP1 correctement formaté pour vérifier sur mon ordi 
+- createjson.py : prend un fichier json et met le formattage correct sur mon ordi (indentation) 
+- code.ipynb : all the codes 

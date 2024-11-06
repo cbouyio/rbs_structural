@@ -1,6 +1,6 @@
 # RNA binding proteins project
 
-#### Work done in the context of the "Projet longue" of M1BI
+#### Work done in the context of the "Projet long" of M1BI
 
 ### Prenom, Nom
 
@@ -38,6 +38,10 @@ Reviews on RBPs and the computation methods developed for their identification a
 
 Techincal part
 1. Add an additional column "No_feat" to show the total number of features for each RBP.
-2. Create a motif_info list and put only the features that have a"motif" or a "binding" type.
+-> done 
+2. Create a motif_info list and put only the features that have a "motif" or a "binding" type.
+-> done (not in the final file)
 3. Generate three new columns in the output file one "Binding_site" one "Motifs" and one "Domains" and you put all the BS IDs and all the Motif IDs and Domain IDs semicolon separed.
+-> done (the column have the ID only once if it's repeated, for binding_id I took the evidenceCode)
 4. At the end out data file will have the following columns "rbp_name","uniprotID","No_Features","motifs"(motif IDs semicolon separated),"binding_Sites"(BS IDs semicolon separated)
+-> and domains (IDs semicolon separated) ? 
