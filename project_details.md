@@ -36,7 +36,7 @@ Reviews on RBPs and the computation methods developed for their identification a
 
 ## After meeting on 30/10/2024
 
-Techincal part
+Technical part
 1. Add an additional column "No_feat" to show the total number of features for each RBP.
 -> done 
 2. Create a motif_info list and put only the features that have a "motif" or a "binding" type.
@@ -45,3 +45,16 @@ Techincal part
 -> done (the column have the ID only once if it's repeated, for binding_id I took the evidenceCode)
 4. At the end out data file will have the following columns "rbp_name","uniprotID","No_Features","motifs"(motif IDs semicolon separated),"binding_Sites"(BS IDs semicolon separated)
 -> and domains (IDs semicolon separated) ? 
+
+
+## After meeting on 08/11/2024
+
+Design the data structure (DS) that we will use to keep more efficiently the structural information for each RBP.
+
+1. The DS will be a dictionary of dictionaries with the UniprotID as primary key and the three keywords (always) as secondary keys.
+2. Within each entry there will be a list of nametuples each with the following fields.
+3. Each nametuple will have the same fields for each entry, Coordinates [begin,end], Description "text", Evidence [of tuples of (id,source)]. (for nametuples look here https://docs.python.org/3/library/collections.html#collections.namedtuple)
+
+This will be the output of the fetch_structural_info function in your code.
+
+Technical: To fetch all these you modularise our code and have a function fetch_evidence and call it multiple times.
