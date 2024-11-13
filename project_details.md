@@ -51,10 +51,15 @@ Technical part
 
 Design the data structure (DS) that we will use to keep more efficiently the structural information for each RBP.
 
-1. The DS will be a dictionary of dictionaries with the UniprotID as primary key and the three keywords (always) as secondary keys.
+1. The DS will be a dictionary of dictionaries with the UniprotID as primary key and the three keywords (always) as secondary keys. 
+-> done 
 2. Within each entry there will be a list of nametuples each with the following fields.
+-> done (nametuple = FeatureInfo)
 3. Each nametuple will have the same fields for each entry, Coordinates [begin,end], Description "text", Evidence [of tuples of (id,source)]. (for nametuples look here https://docs.python.org/3/library/collections.html#collections.namedtuple)
+-> done
 
 This will be the output of the fetch_structural_info function in your code.
+-> done (resultats stockés dans structural_results)
 
 Technical: To fetch all these you modularise our code and have a function fetch_evidence and call it multiple times.
+-> done 
